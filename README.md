@@ -3,8 +3,6 @@
 
 ## Usage
 
-### Drush make and profile install
-
 ```sh
 project.parse(105875)
 ```
