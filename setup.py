@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='parse_cordis',
-    version='0.1.0',
+    # version='0.1.0',
     author='Peter Vanhee',
     author_email='peter@marzeelabs.org',
     packages=['parse_cordis'],
