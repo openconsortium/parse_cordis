@@ -1,6 +1,10 @@
 # Parse Cordis
 **Python package to easily scrape EU's Cordis pages on European science projects**
 
+## Installation
+
+With pip, to be documented.
+
 ## Usage
 
 ```sh
