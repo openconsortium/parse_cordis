@@ -1,5 +1,5 @@
 # Parse Cordis
-**Python package to easily parse EU's Cordis pages on European science projects**
+**Python package to easily scrape EU's Cordis pages on European science projects**
 
 ## Usage
 
