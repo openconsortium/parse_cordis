@@ -140,7 +140,6 @@ def fetchHTMLProject(rcn):
 
 def parse(rcn):
   data = defaultdict(lambda : defaultdict(str))
-
   html = fetchHTMLProject(rcn)
   p = parseHTML(html, data)
   return p

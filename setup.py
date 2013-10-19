@@ -1,4 +1,5 @@
-from distutils.core import setup
+# from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='parse_cordis',
@@ -14,4 +15,5 @@ setup(
         "beautifulsoup4 >= 4.3.2",
         "htmllaundry >= 2.0",
     ],
+    scripts=['bin/parse_project', 'bin/parse_listing'],
 )

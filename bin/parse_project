@@ -1,0 +1,12 @@
+#!/usr/local/bin/python
+
+
+from parse_cordis import project
+import sys
+
+if len(sys.argv) < 2:
+	print "Usage: parse_cordis <RCN>"
+	print "  Example: parse_cordis 105875"
+	print "  Returns project information for the SyStemAge project from the Cordis website" 
+else:
+	print project.parse(sys.argv[1])
