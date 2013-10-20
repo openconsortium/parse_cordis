@@ -63,8 +63,24 @@ def parseHTML(html, data):
   p['last_updated'] = cleanValue(recinfo.find(text=re.compile("Last updated on")).parent.next_sibling.split(":")[1])
   
 
-  coord = soup.find(id="coord")
-  p['coordinator'] = parseContact(coord)
+  # coord = soup.find(id="coord")
+  # p['coordinator'] = parseContact(coord)
+  # logging.debug(d2)
+  
+
+  # d = defaultdict(str)
+  
+
+  # d['name'] = 'xxxx'
+  # d['name2'] = 'yyyy'
+
+  p['coordinator'] = parseContact(soup.find(id="coord"))
+
+  # d2 = defaultdict(str)
+  # d2['pppp'] = '11111'
+  # d = defaultdict(str)
+  # d['tttt'] = d2
+  # p['xxxx'] = d
 
   # parseContact(coord)
 
@@ -80,14 +96,14 @@ def cleanValue(n):
   return n
 
 def parseContact(c):
-
   d = defaultdict(str)
 
   d['name'] = c.find("div", class_="name").get_text()
-  d['country'] = c.find("div", class_="country").find("a").previous_sibling
-  # print name
-  # 
-  # content = c.find("div", class_="item-content")
+
+  country = cleanValue(unicode(c.find("div", class_="country").find("a").previous_sibling))
+  d['country'] = country
+
+  content = c.find("div", class_="item-content")
   contact = c.find(text=re.compile("Administrative contact")).replace("Administrative contact:", "")
   d['contact'] = parseContactName(cleanValue(contact))
   
@@ -102,8 +118,6 @@ def parseContactName(c):
   d['last_name'] = ' '.join(parts[1:]).rstrip()
   d['title'] = re.search('\((\w+)\)',c).group(1)
   return d
-
-
 
 def parseContactsTable(t):
   orgs = t.find_all(text=re.compile("Organization name:"))
