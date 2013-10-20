@@ -5,6 +5,7 @@ from bs4 import UnicodeDammit
 from collections import defaultdict
 from htmllaundry import strip_markup
 import urllib2
+import logging
 
 # def pp(d):
 #   for k,v in d.iteritems():
@@ -14,7 +15,7 @@ def parseHTML(html):
 
   soup = BeautifulSoup(html)
 
-  l = set()
+  l = list()
 
   title = soup.find("div", class_="tab_fullresult")
 
@@ -25,7 +26,7 @@ def parseHTML(html):
       i=i+1
       if i == 7:
         val = cleanValue(td.get_text())
-        l.add(val)
+        l.append(val)
 
   return l
 
@@ -37,14 +38,14 @@ def cleanValue(n):
     n = n.encode('utf8')
   return n
 
-def fetchHTML(query_code):
-  url = "http://cordis.europa.eu/search/index.cfm?fuseaction=proj.printResultList&page=1&perPage=10&q=" + query_code + " &type=adv"
+def fetchHTML(query_code, count):
+  url = "http://cordis.europa.eu/search/index.cfm?fuseaction=proj.printResultList&page=1&perPage=" + str(count) + "&q=" + query_code + "&type=adv"
   response = urllib2.urlopen(url)
   html = response.read()
   return html
 
-def parse(rcn):
-  html = fetchHTML(rcn)
+def parse(rcn, count=10):
+  html = fetchHTML(rcn, count)
   l = parseHTML(html)
   return l
 

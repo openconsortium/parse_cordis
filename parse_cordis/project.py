@@ -11,10 +11,15 @@ import time
 from datetime import date
 import time
 import urllib2
+import logging
 
 def pp(d):
   for k,v in d.iteritems():
     print k + "\t" + v
+
+def processMoneyValue(v):
+  return cleanValue(v.replace("EUR", "").replace(" ", ""))
+
 
 def parseHTML(html, data):
 
@@ -42,8 +47,9 @@ def parseHTML(html, data):
 
   p['reference_number'] = cleanValue(box_left.find(text=re.compile("Project reference")).parent.next_sibling.split(":")[1])
   p['status'] = cleanValue(box_left.find(text=re.compile("Status")).parent.next_sibling.split(":")[1])
-  p['cost'] = cleanValue(box_left.find(text=re.compile("Total cost")).parent.next_sibling.split(":")[1])
-  p['funding'] = cleanValue(box_left.find(text=re.compile("EU contribution")).parent.next_sibling.split(":")[1])
+
+  p['cost'] = processMoneyValue(box_left.find(text=re.compile("Total cost")).parent.next_sibling.split(":")[1])
+  p['funding'] = processMoneyValue(box_left.find(text=re.compile("EU contribution")).parent.next_sibling.split(":")[1])
 
   box_right = details.find("div", class_="box-right")
   p['programme_acronym'] = cleanValue(box_right.p.find('a').get_text())
