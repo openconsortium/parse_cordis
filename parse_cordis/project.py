@@ -17,8 +17,6 @@ def pp(d):
   for k,v in d.iteritems():
     print k + "\t" + v
 
-def processMoneyValue(v):
-  return cleanValue(v.replace("EUR", "").replace(" ", ""))
 
 
 def parseHTML(html, data):
@@ -65,6 +63,9 @@ def parseHTML(html, data):
   # Parse coordinator
   p['coordinator'] = parseContact(soup.find(id="coord"))
 
+  # print p['coordinator']
+  # return
+
   # Parse participants
   p['participants'] = list()
   for participant in soup.find_all("div", class_="participant"):
@@ -93,6 +94,16 @@ def parseContact(c):
   content = c.find("div", class_="item-content")
   contact = c.find(text=re.compile("Administrative contact")).replace("Administrative contact:", "")
   d['contact'] = parseContactName(cleanValue(contact))
+
+  d['address'] = content.br.next_sibling
+
+  tel = content.find(text=re.compile("Tel:"))
+  if tel:
+    d['telephone'] = processPhoneNumber(tel)
+  
+  fax = content.find(text=re.compile("Fax:"))
+  if fax:
+    d['fax'] = processPhoneNumber(fax)
   
   return d
 
@@ -105,6 +116,12 @@ def parseContactName(c):
   d['last_name'] = ' '.join(parts[1:]).rstrip()
   d['title'] = re.search('\((.+)\)',c).group(1)
   return d
+
+def processMoneyValue(v):
+  return cleanValue(v.replace("EUR", "").replace(" ", ""))
+
+def processPhoneNumber(v):
+  return cleanValue(v.split(":")[1])
 
 def parseContactsTable(t):
   orgs = t.find_all(text=re.compile("Organization name:"))
