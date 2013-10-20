@@ -93,9 +93,9 @@ def parseContact(c):
 
   content = c.find("div", class_="item-content")
   contact = c.find(text=re.compile("Administrative contact")).replace("Administrative contact:", "")
-  d['contact'] = parseContactName(cleanValue(contact))
+  parseContactName(cleanValue(contact), d)
 
-  d['address'] = content.br.next_sibling
+  d['address'] = cleanValue(unicode(content.br.next_sibling))
 
   tel = content.find(text=re.compile("Tel:"))
   if tel:
@@ -108,14 +108,14 @@ def parseContact(c):
   return d
 
 # Extracts first name, last name and title from a string
-def parseContactName(c):
-  d = defaultdict(str)
+def parseContactName(c, d):
+  # d = defaultdict(str)
   fullname = c.split("(")[0]
   parts = fullname.split(" ")
-  d['first_name'] = parts[0]
-  d['last_name'] = ' '.join(parts[1:]).rstrip()
-  d['title'] = re.search('\((.+)\)',c).group(1)
-  return d
+  d['contact_first_name'] = parts[0]
+  d['contact_last_name'] = ' '.join(parts[1:]).rstrip()
+  d['contact_title'] = re.search('\((.+)\)',c).group(1)
+  # return d
 
 def processMoneyValue(v):
   return cleanValue(v.replace("EUR", "").replace(" ", ""))
