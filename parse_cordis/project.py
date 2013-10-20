@@ -63,15 +63,10 @@ def parseHTML(html, data):
   # Parse coordinator
   p['coordinator'] = parseContact(soup.find(id="coord"))
 
-  # print p['coordinator']
-  # return
-
   # Parse participants
   p['participants'] = list()
   for participant in soup.find_all("div", class_="participant"):
     p['participants'].append(parseContact(participant))
-    # break
-
 
   return p
 
@@ -105,17 +100,19 @@ def parseContact(c):
   if fax:
     d['fax'] = processPhoneNumber(fax)
   
+  website = content.find("a", text="Website")
+  if website:
+    d['website'] = website['href']
+
   return d
 
 # Extracts first name, last name and title from a string
 def parseContactName(c, d):
-  # d = defaultdict(str)
   fullname = c.split("(")[0]
   parts = fullname.split(" ")
   d['contact_first_name'] = parts[0]
   d['contact_last_name'] = ' '.join(parts[1:]).rstrip()
   d['contact_title'] = re.search('\((.+)\)',c).group(1)
-  # return d
 
 def processMoneyValue(v):
   return cleanValue(v.replace("EUR", "").replace(" ", ""))
