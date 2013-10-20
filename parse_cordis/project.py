@@ -61,6 +61,14 @@ def parseHTML(html, data):
   recinfo = soup.find(id="recinfo")
   p['rcn'] = cleanValue(recinfo.find(text=re.compile("Record number")).parent.next_sibling.split(":")[1].split("/")[0])
   p['last_updated'] = cleanValue(recinfo.find(text=re.compile("Last updated on")).parent.next_sibling.split(":")[1])
+  
+
+  coord = soup.find(id="coord")
+  p['coordinator'] = parseContact(coord)
+
+  # parseContact(coord)
+
+
   return p
 
 def cleanValue(n):
@@ -70,6 +78,32 @@ def cleanValue(n):
     n = n.replace("\n", "")
     n = n.encode('utf8')
   return n
+
+def parseContact(c):
+
+  d = defaultdict(str)
+
+  d['name'] = c.find("div", class_="name").get_text()
+  d['country'] = c.find("div", class_="country").find("a").previous_sibling
+  # print name
+  # 
+  # content = c.find("div", class_="item-content")
+  contact = c.find(text=re.compile("Administrative contact")).replace("Administrative contact:", "")
+  d['contact'] = parseContactName(cleanValue(contact))
+  
+  return d
+
+# Extracts first name, last name and title from a string
+def parseContactName(c):
+  d = defaultdict(str)
+  fullname = c.split("(")[0]
+  parts = fullname.split(" ")
+  d['first_name'] = parts[0]
+  d['last_name'] = ' '.join(parts[1:]).rstrip()
+  d['title'] = re.search('\((\w+)\)',c).group(1)
+  return d
+
+
 
 def parseContactsTable(t):
   orgs = t.find_all(text=re.compile("Organization name:"))
