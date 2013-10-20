@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 from bs4 import UnicodeDammit
-# from pprint import pprint
+from pprint import pprint
 from collections import defaultdict
 from htmllaundry import strip_markup
 import re
@@ -62,27 +62,14 @@ def parseHTML(html, data):
   p['rcn'] = cleanValue(recinfo.find(text=re.compile("Record number")).parent.next_sibling.split(":")[1].split("/")[0])
   p['last_updated'] = cleanValue(recinfo.find(text=re.compile("Last updated on")).parent.next_sibling.split(":")[1])
   
-
-  # coord = soup.find(id="coord")
-  # p['coordinator'] = parseContact(coord)
-  # logging.debug(d2)
-  
-
-  # d = defaultdict(str)
-  
-
-  # d['name'] = 'xxxx'
-  # d['name2'] = 'yyyy'
-
+  # Parse coordinator
   p['coordinator'] = parseContact(soup.find(id="coord"))
 
-  # d2 = defaultdict(str)
-  # d2['pppp'] = '11111'
-  # d = defaultdict(str)
-  # d['tttt'] = d2
-  # p['xxxx'] = d
-
-  # parseContact(coord)
+  # Parse participants
+  p['participants'] = list()
+  for participant in soup.find_all("div", class_="participant"):
+    p['participants'].append(parseContact(participant))
+    # break
 
 
   return p
@@ -116,7 +103,7 @@ def parseContactName(c):
   parts = fullname.split(" ")
   d['first_name'] = parts[0]
   d['last_name'] = ' '.join(parts[1:]).rstrip()
-  d['title'] = re.search('\((\w+)\)',c).group(1)
+  d['title'] = re.search('\((.+)\)',c).group(1)
   return d
 
 def parseContactsTable(t):
