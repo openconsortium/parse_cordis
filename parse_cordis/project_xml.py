@@ -97,7 +97,7 @@ def parse(rcn):
 			except:
 				continue
 
-		if p2['order'] == 1:
+		if p2['order'] == "1":
 			p['coordinator'] = p2['id']
 
 		p['participants'].append(p2)
