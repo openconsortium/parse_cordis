@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultObject schemaVersion="Search Layer 2.3.4"><action>READ</action><response>SUCCESS</response><responsedata><numhits>1</numhits><hit><doctype><![CDATA[PROJ]]></doctype><title><![CDATA[Early warning signals of ageing in human stem cells and age-related disorders]]></title><projectacronym><![CDATA[SYSTEMAGE]]></projectacronym><desc_status><![CDATA[Execution]]></desc_status><call_identifier><![CDATA[FP7-HEALTH-2012-INNO]]></call_identifier><organizationname><![CDATA[EUROPEAN MOLECULAR BIOLOGY LABORATORY]]></organizationname><organizationtype_num><![CDATA[2]]></organizationtype_num><organizationtype_code><![CDATA[ROR]]></organizationtype_code><contact><![CDATA[Phil IRVING (Dr)]]></contact><contact_firstname><![CDATA[Phil]]></contact_firstname><contact_lastname><![CDATA[IRVING]]></contact_lastname><contact_title><![CDATA[Dr]]></contact_title><contact_tel><![CDATA[+49-62213878239]]></contact_tel><contact_fax><![CDATA[+49-62213878525]]></contact_fax><contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=pl0SKMRVeqbqa0Q06tytwz3-Si8OI88iiPq-btGfanBTk2ZLAnr6oNXymd3rObceZ82A0WSpi0cX8BdNPvZXTA]]></contact_email><address><![CDATA[Meyerhofstrasse 1, HEIDELBERG, DEUTSCHLAND]]></address><countrycode><![CDATA[DE]]></countrycode><countrydesc><![CDATA[DEUTSCHLAND]]></countrydesc><regioncode><![CDATA[DE12]]></regioncode><regiondesc><![CDATA[KARLSRUHE]]></regiondesc><citycode><![CDATA[de_de1_de12_heidelberg]]></citycode><citydesc><![CDATA[HEIDELBERG]]></citydesc><latitude><![CDATA[53,4354286]]></latitude><longitude><![CDATA[8,8219672]]></longitude><organizationurl><![CDATA[http://www.embl.org]]></organizationurl><organizationtype_desc><![CDATA[Research]]></organizationtype_desc><objective><![CDATA[The regenerative power of a living organism is linked to the potential of its stem cells to replace the corresponding damaged tissue. Therefore organisms are as old as their stem cells. Whereas the vulnerability to cancer and chronic inflammation is associated with a decline of the immune system, the latter is in turn a sum product of interactions among hematopoietic stem cells (HSC), endothelial cells (EC) of the vascular systems and the microenvironment in the bone marrow, among others. Hence loss of regenerative function and propensity to contract cancers can be interpreted as harbingers of ageing at the level of somatic stem cells. Using HSC and their microenvironment as a model, our principal goal is to develop a systems-level understanding of the molecular mechanisms of ageing in somatic stem cells, the consequences, and means to correct these age-related alterations and diseases. We intend to apply integrative systems biology approaches to characterize the molecular players, genes and pathways that are associated with physiological processes of ageing and two age-related disorders, myelodysplastic syndromes (MDS) and B-cell chronic lymphocytic leukemia (B-CLL). We will use the resulting models of ageing to develop novel, molecular targeted strategies to treat age-related diseases. The SyStemAge consortium involves three hospital departments that are active in implementing innovative treatment strategies of leukaemia and MDS, a number of biomedical departments engaged with basic research in the processes underlying these diseases, two Systems Biology groups, one of Europes most experienced group in biomedical modelling and complex systems theory and two SMEs with proven expertise in the translation of biomedical models in novel therapy strategies in humans. SyStemAge is uniquely positioned to bridge the gap between the clinical, biomedical and natural sciences and immediately contribute to bio-gerontology.]]></objective><projectstartdate><![CDATA[2013-01-01]]></projectstartdate><projectenddate><![CDATA[2017-12-31]]></projectenddate><projectduration><![CDATA[60]]></projectduration><projectreference><![CDATA[306240]]></projectreference><projectstatus><![CDATA[1]]></projectstatus><projectcost><![CDATA[7864905]]></projectcost><projectfunding><![CDATA[5989925]]></projectfunding><programmeacronym><![CDATA[FP7-HEALTH]]></programmeacronym><subprogrammearea><![CDATA[HEALTH.2012.2.2.2-1]]></subprogrammearea><programmetype><![CDATA[339]]></programmetype><contract_type><![CDATA[CP-FP]]></contract_type><contract_type_desc><![CDATA[Small or medium-scale focused research project]]></contract_type_desc><subjectindex><![CDATA[Scientific Research]]></subjectindex><subjectindexcode><![CDATA[SCI]]></subjectindexcode><rcn><![CDATA[105875]]></rcn><rec_qv_date><![CDATA[2012-11-07]]></rec_qv_date><last_update_date><![CDATA[2013-01-10]]></last_update_date><rec_publication_date><![CDATA[2013-01-11]]></rec_publication_date><rec_creation_date><![CDATA[2012-11-08]]></rec_creation_date><acronym_description><![CDATA[Early warning signals of ageing in human stem cells and age-related disorders]]></acronym_description><metadatagroup name="tag_participants" size="8"><item count="1"><tag_part_organizationname><![CDATA[DEUTSCHES KREBSFORSCHUNGSZENTRUM]]></tag_part_organizationname><tag_part_contact><![CDATA[Ina KRISCHEK (Dr)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Ina]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[KRISCHEK]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Dr]]></tag_part_contact_title><tag_part_participant_id><![CDATA[13366345]]></tag_part_participant_id><tag_part_tel><![CDATA[+49-6211422700]]></tag_part_tel><tag_part_fax><![CDATA[+49-6221422708]]></tag_part_fax><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=HEnb-CPvRXyb5eU_VZfiDy49sTFAW2kuB92hxITNT79Ym26hAONXxBdwRp8Y6xZqgVAQwvdzN-Ip3o8zLOWLCA]]></tag_part_email><tag_part_url><![CDATA[http://www.dkfz.de]]></tag_part_url><tag_part_address><![CDATA[Im Neuenheimer Feld 280, 10 19 49, HEIDELBERG, DEUTSCHLAND]]></tag_part_address><tag_part_countrydesc><![CDATA[DEUTSCHLAND]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[DE]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[KARLSRUHE]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[HEIDELBERG]]></tag_part_citydesc><tag_part_postcode><![CDATA[10 19 49]]></tag_part_postcode><tag_part_latitude><![CDATA[49,4149507]]></tag_part_latitude><tag_part_longitude><![CDATA[8,6723810]]></tag_part_longitude><tag_part_organizationtype_desc><![CDATA[Research]]></tag_part_organizationtype_desc><tag_part_organizationtype_num><![CDATA[2]]></tag_part_organizationtype_num><tag_part_organizationtype_code><![CDATA[ROR]]></tag_part_organizationtype_code></item><item count="2"><tag_part_organizationname><![CDATA[THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF OXFORD]]></tag_part_organizationname><tag_part_contact><![CDATA[Linda PIALEK (Ms)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Linda]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[PIALEK]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Ms]]></tag_part_contact_title><tag_part_participant_id><![CDATA[12396118]]></tag_part_participant_id><tag_part_tel><![CDATA[+44-186-5289800]]></tag_part_tel><tag_part_fax><![CDATA[+44-186-5289801]]></tag_part_fax><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=ieUcctQehRbJaLWecNwCcUVhv1s6dxwgTYqsEKGSmkh0WFrdo1NmpD-dKNIKxmwKD9DXn0T0AXSFvz3EgjDrclrjkV3-H_edPFs-Gz3Woq4]]></tag_part_email><tag_part_url><![CDATA[http://www.ox.ac.uk]]></tag_part_url><tag_part_address><![CDATA[University Offices, Wellington Square, OXFORD, UNITED KINGDOM]]></tag_part_address><tag_part_countrydesc><![CDATA[UNITED KINGDOM]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[GB]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[BERKSHIRE, BUCKINGHAMSHIRE, OXFORDSHIRE]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[OXFORD]]></tag_part_citydesc><tag_part_latitude><![CDATA[51,7580805]]></tag_part_latitude><tag_part_longitude><![CDATA[-1,2622362]]></tag_part_longitude><tag_part_organizationtype_desc><![CDATA[Education]]></tag_part_organizationtype_desc><tag_part_organizationtype_num><![CDATA[3]]></tag_part_organizationtype_num><tag_part_organizationtype_code><![CDATA[EDU]]></tag_part_organizationtype_code></item><item count="3"><tag_part_organizationname><![CDATA[FUNDACIO PRIVADA INSTITUT DE RECERCA BIOMEDICA IRB]]></tag_part_organizationname><tag_part_contact><![CDATA[Alexandre PUERTO VALDIVIESO (Mr)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Alexandre]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[PUERTO VALDIVIESO]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Mr]]></tag_part_contact_title><tag_part_participant_id><![CDATA[11369541]]></tag_part_participant_id><tag_part_tel><![CDATA[+34-934039810]]></tag_part_tel><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=JHO6mSr4W4o3_KO-dByIVwzYHortMCGF6EH5MloKC3qp5uqoRCa5t6hExCwlZxCiP53JY8q5Kp8qNVGpVnsfZnQq2mD1fB9XEFPtcEAWPQQ]]></tag_part_email><tag_part_url><![CDATA[http://www.irbbarcelona.org]]></tag_part_url><tag_part_address><![CDATA[Carrer Baldiri Reixac Parc Scientific Barcelona 10-12, BARCELONA, ESPAÑA]]></tag_part_address><tag_part_countrydesc><![CDATA[ESPAÑA]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[ES]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[CATALUÑA]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[BARCELONA]]></tag_part_citydesc></item><item count="4"><tag_part_organizationname><![CDATA[ANAXOMICS BIOTECH, S.L.]]></tag_part_organizationname><tag_part_contact><![CDATA[Vesna RADOVANOVIC (Ms.)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Vesna]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[RADOVANOVIC]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Ms.]]></tag_part_contact_title><tag_part_participant_id><![CDATA[11624245]]></tag_part_participant_id><tag_part_tel><![CDATA[+34-934516717]]></tag_part_tel><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=jir6wNrAOiHzerZZBguI61-kd4CiKCP4jnvIi_PmQD6BSLQUDPizgK0WiweGJ-pGuhCBpHpyhjzlf62XYZ6eLlWxmOZB0JTnqi9jhshqdyg]]></tag_part_email><tag_part_url><![CDATA[http://www.anaxomics.com]]></tag_part_url><tag_part_address><![CDATA[CALLE BALMES (PISO 4 - PTA 2A) 89, BARCELONA, ESPAÑA]]></tag_part_address><tag_part_countrydesc><![CDATA[ESPAÑA]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[ES]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[CATALUÑA]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[BARCELONA]]></tag_part_citydesc><tag_part_latitude><![CDATA[41,9179844]]></tag_part_latitude><tag_part_longitude><![CDATA[3,1709632]]></tag_part_longitude></item><item count="5"><tag_part_organizationname><![CDATA[UNIVERSITAETSKLINIKUM HEIDELBERG]]></tag_part_organizationname><tag_part_contact><![CDATA[Thomas EISENHAUER (Mr)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Thomas]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[EISENHAUER]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Mr]]></tag_part_contact_title><tag_part_participant_id><![CDATA[12270832]]></tag_part_participant_id><tag_part_tel><![CDATA[+49-6221567324]]></tag_part_tel><tag_part_fax><![CDATA[+49-6221565460]]></tag_part_fax><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=5hDhwV5fsvNXyvqr4eWYINm3ysAftO5B9Eqm9Sh1AsNplrlck8Pk5v6A0F4nhLzMePeWbSW1NGo3vzDeYuaa76FCc8acqsgWMQmQbYSiuLQlgJZ38E-RbyS4bnX5R3l_69NR0c8xPtILdO0Mr4GlRg]]></tag_part_email><tag_part_address><![CDATA[IM NEUENHEIMER FELD 672, HEIDELBERG, DEUTSCHLAND]]></tag_part_address><tag_part_countrydesc><![CDATA[DEUTSCHLAND]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[DE]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[KARLSRUHE]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[HEIDELBERG]]></tag_part_citydesc><tag_part_latitude><![CDATA[8,6645271]]></tag_part_latitude><tag_part_longitude><![CDATA[49,4202493]]></tag_part_longitude></item><item count="6"><tag_part_organizationname><![CDATA[ALMAZOV FEDERAL HEART, BLOOD AND ENDOCRINOLOGY CENTRE, FEDERATION AGENCY ON HIGH MEDICAL TECHNOLOGIES]]></tag_part_organizationname><tag_part_contact><![CDATA[Yulia LUKIANCHIKOVA (Ms.)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Yulia]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[LUKIANCHIKOVA]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Ms.]]></tag_part_contact_title><tag_part_participant_id><![CDATA[13366348]]></tag_part_participant_id><tag_part_tel><![CDATA[+7-9117552406]]></tag_part_tel><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=GvBGechyN5iqVy1T-XwFwxq50iT1IMYXLuk_lfVHwvnRwkOPVmojtyP1nGTyVKMWid4uFqELb6E8ww3NA0NpYg]]></tag_part_email><tag_part_url><![CDATA[http://www.almazovcentre.ru]]></tag_part_url><tag_part_address><![CDATA[Akkuratova Str. 2, SAINT-PETERSBURG, Russian Federation]]></tag_part_address><tag_part_countrydesc><![CDATA[Russian Federation]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[RU]]></tag_part_countrycode><tag_part_citydesc><![CDATA[SAINT-PETERSBURG]]></tag_part_citydesc><tag_part_latitude><![CDATA[60,0158893]]></tag_part_latitude><tag_part_longitude><![CDATA[30,3062611]]></tag_part_longitude></item><item count="7"><tag_part_organizationname><![CDATA[KTB tumourFORSCHUNGSGESELLSCHAFT MBH]]></tag_part_organizationname><tag_part_contact><![CDATA[Michael KUBBUTAT (Dr)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Michael]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[KUBBUTAT]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Dr]]></tag_part_contact_title><tag_part_participant_id><![CDATA[9813626]]></tag_part_participant_id><tag_part_tel><![CDATA[+49-7612061600]]></tag_part_tel><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=2lTD9Bp0x10b413_Cjigl2AIAH3D7mPMssB7dh470BMSLnd4SJ9LmqSuCELb5HzNsweh6aKU7GPGK9RkbExwcWzKWyZuecSYriYmaLrxkYY]]></tag_part_email><tag_part_address><![CDATA[BREISACHER STRASSE 117, FREIBURG, DEUTSCHLAND]]></tag_part_address><tag_part_countrydesc><![CDATA[DEUTSCHLAND]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[DE]]></tag_part_countrycode><tag_part_regiondesc><![CDATA[FREIBURG]]></tag_part_regiondesc><tag_part_citydesc><![CDATA[FREIBURG]]></tag_part_citydesc><tag_part_latitude><![CDATA[48,0050200]]></tag_part_latitude><tag_part_longitude><![CDATA[7,8322900]]></tag_part_longitude></item><item count="8"><tag_part_organizationname><![CDATA[KEIO GIJUKU]]></tag_part_organizationname><tag_part_contact><![CDATA[Toshio SUDA (Dr)]]></tag_part_contact><tag_part_contact_first_name><![CDATA[Toshio]]></tag_part_contact_first_name><tag_part_contact_last_name><![CDATA[SUDA]]></tag_part_contact_last_name><tag_part_contact_title><![CDATA[Dr]]></tag_part_contact_title><tag_part_participant_id><![CDATA[13366350]]></tag_part_participant_id><tag_part_tel><![CDATA[+81-353633474]]></tag_part_tel><tag_part_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=T-NsVL460-X7qB-p8958R98fIFUZY4w2_5rFbh282wog1xXGpexfzoV0aOzDOyXTi-9cgdjiRsNaM6Ab_7dO4dzXyfhjJ9u_Mclnu5Hn-sM]]></tag_part_email><tag_part_url><![CDATA[http://www.keio.ac.jp/index-en.htm]]></tag_part_url><tag_part_address><![CDATA[MITA, MINATO-KU 2-15-45, TOKYO, JAPAN]]></tag_part_address><tag_part_countrydesc><![CDATA[JAPAN]]></tag_part_countrydesc><tag_part_countrycode><![CDATA[JP]]></tag_part_countrycode><tag_part_citydesc><![CDATA[TOKYO]]></tag_part_citydesc><tag_part_latitude><![CDATA[35,6492550]]></tag_part_latitude><tag_part_longitude><![CDATA[139,7428225]]></tag_part_longitude></item></metadatagroup>
+
+
+<metadatagroup name="tag_erc_fields" size="9">
+	<item count="1">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[999988230]]></org_id>
+		<participant_order><![CDATA[1]]></participant_order>
+		<legal_name><![CDATA[EUROPEAN MOLECULAR BIOLOGY LABORATORY]]></legal_name>
+		<short_name><![CDATA[EMBL]]></short_name>
+		<street_name><![CDATA[Meyerhofstrasse 1]]></street_name>
+		<town><![CDATA[HEIDELBERG]]></town>
+		<country_ccm><![CDATA[DE]]></country_ccm>
+		<internet_homepage><![CDATA[www.embl.org]]></internet_homepage>
+		<contact><![CDATA[Phil Irving (Dr.)]]></contact>
+		<contact_title><![CDATA[Dr.]]></contact_title>
+		<contact_last_name><![CDATA[Irving]]></contact_last_name>
+		<contact_first_name><![CDATA[Phil]]></contact_first_name>
+		<contact_tel><![CDATA[+4962213878239]]></contact_tel>
+		<contact_fax><![CDATA[+49 6221 3878575]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=LPde4QvaORB-N_70dL7fU7yuwSh4hWrwIIxfJN8lBSG8AVEp0H2Zsv0mDgf19klrCH52Z13j4caW3mEltaU0sA]]></contact_email>
+	</item>
+	<item count="2">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[994887873]]></org_id>
+		<participant_order><![CDATA[2]]></participant_order>
+		<legal_name><![CDATA[ALMAZOV FEDERAL HEART, BLOOD AND ENDOCRINOLOGY CENTRE, FEDERATION AGENCY ON HIGH MEDICAL TECHNOLOGIES]]></legal_name>
+		<short_name><![CDATA[AC]]></short_name>
+		<street_name><![CDATA[Akkuratova Str. 2]]></street_name>
+		<town><![CDATA[Saint-Petersburg]]></town>
+		<country_ccm><![CDATA[RU]]></country_ccm>
+		<internet_homepage><![CDATA[www.almazovcentre.ru]]></internet_homepage>
+		<contact><![CDATA[Yulia Lukianchikova (Ms.)]]></contact>
+		<contact_title><![CDATA[Ms.]]></contact_title>
+		<contact_last_name><![CDATA[Lukianchikova]]></contact_last_name>
+		<contact_first_name><![CDATA[Yulia]]></contact_first_name>
+		<contact_tel><![CDATA[+79117552406]]></contact_tel>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=GvBGechyN5iqVy1T-XwFwxq50iT1IMYXLuk_lfVHwvnRwkOPVmojtyP1nGTyVKMWid4uFqELb6E8ww3NA0NpYg]]></contact_email>
+	</item>
+	<item count="3">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[998152505]]></org_id>
+		<participant_order><![CDATA[3]]></participant_order>
+		<legal_name><![CDATA[ANAXOMICS BIOTECH, S.L.]]></legal_name>
+		<short_name><![CDATA[AX]]></short_name>
+		<street_name><![CDATA[CALLE BALMES (PISO 4 - PTA 2A) 89]]></street_name>
+		<town><![CDATA[Barcelona]]></town>
+		<country_ccm><![CDATA[ES]]></country_ccm>
+		<internet_homepage><![CDATA[www.anaxomics.com]]></internet_homepage>
+		<contact><![CDATA[Vesna Radovanovic (Ms.)]]></contact>
+		<contact_title><![CDATA[Ms.]]></contact_title>
+		<contact_last_name><![CDATA[Radovanovic]]></contact_last_name>
+		<contact_first_name><![CDATA[Vesna]]></contact_first_name>
+		<contact_tel><![CDATA[+34 934 516 717]]></contact_tel>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=sRYn587tZW7-wjygNjd46JkanuGevEOKvKUQQbe-FXwTL0arBry27mw9v6m8GkqBEKaOvybeabSw5URZ3Eigm9aBcrxldJwHU_eBWUCdMDw]]></contact_email>
+	</item>
+	<item count="4">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[999990073]]></org_id>
+		<participant_order><![CDATA[5]]></participant_order>
+		<legal_name><![CDATA[DEUTSCHES KREBSFORSCHUNGSZENTRUM]]></legal_name>
+		<short_name><![CDATA[DKFZ]]></short_name>
+		<street_name><![CDATA[Im Neuenheimer Feld 280]]></street_name>
+		<town><![CDATA[HEIDELBERG]]></town>
+		<country_ccm><![CDATA[DE]]></country_ccm>
+		<po_box><![CDATA[10 19 49]]></po_box>
+		<internet_homepage><![CDATA[www.dkfz.de]]></internet_homepage>
+		<contact><![CDATA[Ina Krischek (Dr.)]]></contact>
+		<contact_title><![CDATA[Dr.]]></contact_title>
+		<contact_last_name><![CDATA[Krischek]]></contact_last_name>
+		<contact_first_name><![CDATA[Ina]]></contact_first_name>
+		<contact_tel><![CDATA[+49 6211 422700]]></contact_tel>
+		<contact_fax><![CDATA[+49 6221 422708]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=HEnb-CPvRXyb5eU_VZfiDy49sTFAW2kuB92hxITNT79Ym26hAONXxBdwRp8Y6xZqgVAQwvdzN-Ip3o8zLOWLCA]]></contact_email>
+	</item>
+	<item count="5">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[999541836]]></org_id>
+		<participant_order><![CDATA[6]]></participant_order>
+		<legal_name><![CDATA[FUNDACIO PRIVADA INSTITUT DE RECERCA BIOMEDICA IRB]]></legal_name>
+		<short_name><![CDATA[IRB Barcelona]]></short_name>
+		<street_name><![CDATA[Carrer Baldiri Reixac Parc Scientific Barcelona 10-12]]></street_name>
+		<town><![CDATA[BARCELONA]]></town>
+		<country_ccm><![CDATA[ES]]></country_ccm>
+		<internet_homepage><![CDATA[www.irbbarcelona.org]]></internet_homepage>
+		<contact><![CDATA[Alexandre Puerto Valdivieso (Mr.)]]></contact>
+		<contact_title><![CDATA[Mr.]]></contact_title>
+		<contact_last_name><![CDATA[Puerto Valdivieso]]></contact_last_name>
+		<contact_first_name><![CDATA[Alexandre]]></contact_first_name>
+		<contact_tel><![CDATA[+34934039810]]></contact_tel>
+		<contact_fax><![CDATA[+34934037114]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=JHO6mSr4W4o3_KO-dByIVwzYHortMCGF6EH5MloKC3qp5uqoRCa5t6hExCwlZxCiP53JY8q5Kp8qNVGpVnsfZnQq2mD1fB9XEFPtcEAWPQQ]]></contact_email>
+	</item>
+	<item count="6">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[997773817]]></org_id>
+		<participant_order><![CDATA[7]]></participant_order>
+		<legal_name><![CDATA[KEIO GIJUKU]]></legal_name>
+		<short_name><![CDATA[Keio Univ]]></short_name>
+		<street_name><![CDATA[MITA, MINATO-KU 2-15-45]]></street_name>
+		<town><![CDATA[TOKYO]]></town>
+		<country_ccm><![CDATA[JP]]></country_ccm>
+		<internet_homepage><![CDATA[http://www.keio.ac.jp/index-en.htm]]></internet_homepage>
+		<contact><![CDATA[Toshio Suda (Dr.)]]></contact>
+		<contact_title><![CDATA[Dr.]]></contact_title>
+		<contact_last_name><![CDATA[Suda]]></contact_last_name>
+		<contact_first_name><![CDATA[Toshio]]></contact_first_name>
+		<contact_tel><![CDATA[+81353633474]]></contact_tel>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=T-NsVL460-X7qB-p8958R98fIFUZY4w2_5rFbh282wog1xXGpexfzoV0aOzDOyXTi-9cgdjiRsNaM6Ab_7dO4dzXyfhjJ9u_Mclnu5Hn-sM]]></contact_email>
+	</item>
+	<item count="7">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[964100461]]></org_id>
+		<participant_order><![CDATA[8]]></participant_order>
+		<legal_name><![CDATA[KTB TUMORFORSCHUNGSGESELLSCHAFT MBH]]></legal_name>
+		<short_name><![CDATA[ProQinase]]></short_name>
+		<street_name><![CDATA[BREISACHER STRASSE 117]]></street_name>
+		<town><![CDATA[FREIBURG]]></town>
+		<country_ccm><![CDATA[DE]]></country_ccm>
+		<contact><![CDATA[Michael Kubbutat (Dr.)]]></contact>
+		<contact_title><![CDATA[Dr.]]></contact_title>
+		<contact_last_name><![CDATA[Kubbutat]]></contact_last_name>
+		<contact_first_name><![CDATA[Michael]]></contact_first_name>
+		<contact_tel><![CDATA[+49 761 2061600]]></contact_tel>
+		<contact_fax><![CDATA[+49 761 206 1781]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=2lTD9Bp0x10b413_Cjigl2AIAH3D7mPMssB7dh470BMSLnd4SJ9LmqSuCELb5HzNsweh6aKU7GPGK9RkbExwcWzKWyZuecSYriYmaLrxkYY]]></contact_email>
+	</item>
+	<item count="8">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[999841081]]></org_id>
+		<participant_order><![CDATA[9]]></participant_order>
+		<legal_name><![CDATA[UNIVERSITAETSKLINIKUM HEIDELBERG]]></legal_name>
+		<short_name><![CDATA[UKL-HD]]></short_name>
+		<street_name><![CDATA[IM NEUENHEIMER FELD 672]]></street_name>
+		<town><![CDATA[HEIDELBERG]]></town>
+		<country_ccm><![CDATA[DE]]></country_ccm>
+		<contact><![CDATA[Thomas Eisenhauer (Mr.)]]></contact>
+		<contact_title><![CDATA[Mr.]]></contact_title>
+		<contact_last_name><![CDATA[Eisenhauer]]></contact_last_name>
+		<contact_first_name><![CDATA[Thomas]]></contact_first_name>
+		<contact_tel><![CDATA[+49 6221 567324]]></contact_tel>
+		<contact_fax><![CDATA[+49 6221 565460]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=5hDhwV5fsvNXyvqr4eWYINm3ysAftO5B9Eqm9Sh1AsNplrlck8Pk5v6A0F4nhLzMePeWbSW1NGo3vzDeYuaa76FCc8acqsgWMQmQbYSiuLQlgJZ38E-RbyS4bnX5R3l_69NR0c8xPtILdO0Mr4GlRg]]></contact_email>
+	</item>
+	<item count="9">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[999984350]]></org_id>
+		<participant_order><![CDATA[10]]></participant_order>
+		<legal_name><![CDATA[THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF OXFORD]]></legal_name>
+		<short_name><![CDATA[UOXF]]></short_name>
+		<street_name><![CDATA[University Offices, Wellington Square]]></street_name>
+		<town><![CDATA[OXFORD]]></town>
+		<country_ccm><![CDATA[UK]]></country_ccm>
+		<internet_homepage><![CDATA[www.ox.ac.uk]]></internet_homepage>
+		<contact><![CDATA[Linda Pialek (Ms.)]]></contact>
+		<contact_title><![CDATA[Ms.]]></contact_title>
+		<contact_last_name><![CDATA[Pialek]]></contact_last_name>
+		<contact_first_name><![CDATA[Linda]]></contact_first_name>
+		<contact_tel><![CDATA[+44 1865 289800]]></contact_tel>
+		<contact_fax><![CDATA[+44 1865 289801]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=ieUcctQehRbJaLWecNwCcUVhv1s6dxwgTYqsEKGSmkh0WFrdo1NmpD-dKNIKxmwKD9DXn0T0AXSFvz3EgjDrclrjkV3-H_edPFs-Gz3Woq4]]></contact_email>
+	</item>
+</metadatagroup></hit></responsedata></resultObject>
+		
+			
+
+	
+	
+	
+	
+		
+
+
+
+
+
+
+
+	
+

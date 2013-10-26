@@ -1,7 +1,8 @@
 #!/usr/local/bin/python
 
 
-from parse_cordis import project
+# from parse_cordis import project
+from parse_cordis import project_xml
 import sys
 
 if len(sys.argv) < 2:
@@ -9,4 +10,5 @@ if len(sys.argv) < 2:
 	print "  Example: parse_cordis 105875"
 	print "  Returns project information for the SyStemAge project from the Cordis website" 
 else:
-	print project.parse(sys.argv[1])
+	# print project.parse(sys.argv[1])
+	print project_xml.parse(sys.argv[1])
