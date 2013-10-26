@@ -33,8 +33,9 @@ def getMapping():
 	return m
 
 def parse(rcn):
-	# url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
-	tree = etree.parse('/Users/pvhee/code/parse_cordis/parse_cordis/tests/project.xml')
+	url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
+	# tree = etree.parse('/Users/pvhee/code/parse_cordis/parse_cordis/tests/project.xml')
+	tree = etree.parse(url)
 
 	# print(etree.tostring(doc, pretty_print=True))
 
