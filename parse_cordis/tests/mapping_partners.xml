@@ -1,0 +1,35 @@
+<item count="7">
+	<tag_part_organizationname><![CDATA[KTB tumourFORSCHUNGSGESELLSCHAFT MBH]]></tag_part_organizationname>
+	<tag_part_contact><![CDATA[Michael KUBBUTAT (Dr)]]></tag_part_contact>
+	<tag_part_contact_first_name><![CDATA[Michael]]></tag_part_contact_first_name>
+	<tag_part_contact_last_name><![CDATA[KUBBUTAT]]></tag_part_contact_last_name>
+	<tag_part_contact_title><![CDATA[Dr]]></tag_part_contact_title>
+	<tag_part_participant_id><![CDATA[9813626]]></tag_part_participant_id>
+	<tag_part_tel><![CDATA[+49-7612061600]]></tag_part_tel>
+	<tag_part_email/>
+	<tag_part_address><![CDATA[BREISACHER STRASSE 117, FREIBURG, DEUTSCHLAND]]></tag_part_address>
+	<tag_part_countrydesc><![CDATA[DEUTSCHLAND]]></tag_part_countrydesc>
+	<tag_part_countrycode><![CDATA[DE]]></tag_part_countrycode>
+	<tag_part_regiondesc><![CDATA[FREIBURG]]></tag_part_regiondesc>
+	<tag_part_citydesc><![CDATA[FREIBURG]]></tag_part_citydesc>
+	<tag_part_latitude><![CDATA[48,0050200]]></tag_part_latitude>
+	<tag_part_longitude><![CDATA[7,8322900]]></tag_part_longitude>
+</item>
+
+	<item count="7">
+		<project_ref><![CDATA[306240]]></project_ref>
+		<org_id><![CDATA[964100461]]></org_id>
+		<participant_order><![CDATA[8]]></participant_order>
+		<legal_name><![CDATA[KTB TUMORFORSCHUNGSGESELLSCHAFT MBH]]></legal_name>
+		<short_name><![CDATA[ProQinase]]></short_name>
+		<street_name><![CDATA[BREISACHER STRASSE 117]]></street_name>
+		<town><![CDATA[FREIBURG]]></town>
+		<country_ccm><![CDATA[DE]]></country_ccm>
+		<contact><![CDATA[Michael Kubbutat (Dr.)]]></contact>
+		<contact_title><![CDATA[Dr.]]></contact_title>
+		<contact_last_name><![CDATA[Kubbutat]]></contact_last_name>
+		<contact_first_name><![CDATA[Michael]]></contact_first_name>
+		<contact_tel><![CDATA[+49 761 2061600]]></contact_tel>
+		<contact_fax><![CDATA[+49 761 206 1781]]></contact_fax>
+		<contact_email><![CDATA[http://cordis.europa.eu/MailAnon/index.cfm?fuseaction=Hiding.PostalForm&address=2lTD9Bp0x10b413_Cjigl2AIAH3D7mPMssB7dh470BMSLnd4SJ9LmqSuCELb5HzNsweh6aKU7GPGK9RkbExwcWzKWyZuecSYriYmaLrxkYY]]></contact_email>
+	</item>

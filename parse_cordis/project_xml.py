@@ -47,11 +47,23 @@ def getMapping(type='project'):
 
 		m['street'] = 'street_name'
 		m['city'] = 'town'
+		m['po_box'] = 'po_box'
 		m['country'] = 'country_ccm'
 		m['website'] = 'internet_homepage'
 		m['order'] = 'participant_order'
 
+	elif type == 'coordinator':
+		m['latitude'] = 'latitude'
+		m['longitude'] = 'longitude'
+		m['regiondesc'] = 'regiondesc'
+		m['regioncode'] = 'regioncode'
+		m['citycode'] = 'citycode'
+		m['type'] = 'organizationtype_desc'
 
+	elif type == 'partner':
+		m['latitude'] = 'tag_part_latitude'
+		m['longitude'] = 'tag_part_longitude'
+		m['partner_id'] = 'tag_part_participant_id'
 
 	return m
 
@@ -87,6 +99,12 @@ def parse(rcn):
 			continue
 
 
+	p_extras = defaultdict(str)
+	participants_extra = root.xpath("//metadatagroup[@name='tag_participants']/item")
+	for p_extra in participants_extra:
+		key = p_extra.find("tag_part_organizationname").text
+		p_extras[key.lower()] = p_extra.find("tag_part_organizationname").text
+
 	p['participants'] = list()
 	participants = root.xpath("//metadatagroup[@name='tag_erc_fields']/item")
 	for participant in participants:
@@ -99,6 +117,19 @@ def parse(rcn):
 
 		if p2['order'] == "1":
 			p['coordinator'] = p2['id']
+			for k2,v2 in getMapping('coordinator').iteritems():
+				try:
+					p2[k2] = hit.find(v2).text
+				except:
+					continue
+		else:
+			fullname = p2['name']
+			if p_extras[fullname.lower()] != "":
+				for k2,v2 in getMapping('partner').iteritems():
+					try:
+						p2[k2] = hit.find(v2).text
+					except:
+						continue
 
 		p['participants'].append(p2)
 
