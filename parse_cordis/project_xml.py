@@ -4,7 +4,7 @@ from collections import defaultdict
 # Data-storage trick from https://gist.github.com/hrldcpr/2012250
 def tree(): return defaultdict(tree)
 
-def getMapping(type='project'):
+def getMapping(type):
 	m = tree()
 
 	if type == 'project':
@@ -84,43 +84,26 @@ def parse(rcn):
 	p = tree()
 
 	# Parse default project attributes
-	for k,v in getMapping('project').iteritems():
-		try:
-			p[k] = hit.find(v).text
-		except:
-			continue
+	mapAttributes(hit, p, 'project')
 
 	# Parse additional partner attributes, and store by partner name (i.e. org. name) 
 	p_extras = tree()
 	participants_extra = root.xpath("//metadatagroup[@name='tag_participants']/item")
 	for p_extra in participants_extra:
 		key = p_extra.find("tag_part_organizationname").text.lower()
-		for k,v in getMapping('partner').iteritems():
-			try:
-				p_extras[key][k] = p_extra.find(v).text
-			except:
-				continue
+		mapAttributes(p_extra, p_extras[key], 'partner')
 
 	# Partner/participant attributes
 	p['participants'] = list()
 	participants = root.xpath("//metadatagroup[@name='tag_erc_fields']/item")
 	for participant in participants:
 		p2 = defaultdict(str)
-
-		for k,v in getMapping('organization').iteritems():
-			try:
-				p2[k] = participant.find(v).text
-			except:
-				continue
+		mapAttributes(participant, p2, 'organization')
 
 		if p2['order'] == "1":
 			# Add in additional data for the coordinator
 			p['coordinator'] = p2['id']
-			for k2,v2 in getMapping('coordinator').iteritems():
-				try:
-					p2[k2] = hit.find(v2).text
-				except:
-					continue
+			mapAttributes(hit, p2, 'coordinator')
 		else:
 			# Add in additional data for participants
 			key_org = p2['name'].lower()
@@ -129,6 +112,18 @@ def parse(rcn):
 					p2[k2] = v2
 
 		p['participants'].append(p2)
+	
 	return p
 
+def mapAttributes(hit, p, type):
+	for k,v in getMapping(type).iteritems():
+		try:
+			text = hit.find(v).text
+
+			if (k == 'latitude' or k == 'longitude'):
+				text = text.replace(',', '.')
+
+			p[k] = text
+		except:
+			continue
 
