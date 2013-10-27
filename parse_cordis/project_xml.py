@@ -1,8 +1,11 @@
 from lxml import etree
 from collections import defaultdict
 
+# Data-storage trick from https://gist.github.com/hrldcpr/2012250
+def tree(): return defaultdict(tree)
+
 def getMapping(type='project'):
-	m = defaultdict(str)
+	m = tree()
 
 	if type == 'project':
 		m['title'] = 'title'
@@ -67,10 +70,6 @@ def getMapping(type='project'):
 
 	return m
 
-# Data-storage trick from https://gist.github.com/hrldcpr/2012250
-def tree(): return defaultdict(tree)
-
-
 def parse(rcn):
 	if rcn.isdigit():
 		url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
@@ -82,7 +81,6 @@ def parse(rcn):
 	root = t.getroot()
 	hit = t.find('responsedata').find('hit')
 
-	# p = defaultdict(str)
 	p = tree()
 
 	# Parse default project attributes
@@ -92,12 +90,16 @@ def parse(rcn):
 		except:
 			continue
 
-	# Parse additional partner attributes
-	p_extras = defaultdict(str)
+	# Parse additional partner attributes, and store by partner name (i.e. org. name) 
+	p_extras = tree()
 	participants_extra = root.xpath("//metadatagroup[@name='tag_participants']/item")
 	for p_extra in participants_extra:
-		key = p_extra.find("tag_part_organizationname").text
-		p_extras[key.lower()] = p_extra.find("tag_part_organizationname").text
+		key = p_extra.find("tag_part_organizationname").text.lower()
+		for k,v in getMapping('partner').iteritems():
+			try:
+				p_extras[key][k] = p_extra.find(v).text
+			except:
+				continue
 
 	# Partner/participant attributes
 	p['participants'] = list()
@@ -121,13 +123,10 @@ def parse(rcn):
 					continue
 		else:
 			# Add in additional data for participants
-			fullname = p2['name']
-			if p_extras[fullname.lower()] != "":
-				for k2,v2 in getMapping('partner').iteritems():
-					try:
-						p2[k2] = hit.find(v2).text
-					except:
-						continue
+			key_org = p2['name'].lower()
+			if key_org in p_extras:
+				for k2,v2 in p_extras[key_org].iteritems():
+					p2[k2] = v2
 
 		p['participants'].append(p2)
 	return p
