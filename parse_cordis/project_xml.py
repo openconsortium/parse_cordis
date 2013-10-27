@@ -72,7 +72,7 @@ def tree(): return defaultdict(tree)
 
 
 def parse(rcn):
-	if isinstance(rcn, int):
+	if rcn.isdigit():
 		url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
 	else:
 		# Support for using XML files directly
