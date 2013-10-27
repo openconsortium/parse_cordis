@@ -67,48 +67,44 @@ def getMapping(type='project'):
 
 	return m
 
+# Data-storage trick from https://gist.github.com/hrldcpr/2012250
+def tree(): return defaultdict(tree)
+
+
 def parse(rcn):
-	# url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
+	if isinstance(rcn, int):
+		url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
+	else:
+		# Support for using XML files directly
+		url = rcn
 	
-	url = '/Users/pvhee/code/parse_cordis/parse_cordis/tests/project.xml'
-	# 
-	# tree = etree.parse('/Users/pvhee/code/parse_cordis/parse_cordis/tests/project.xml')
-	tree = etree.parse(url)
+	t = etree.parse(url)
+	root = t.getroot()
+	hit = t.find('responsedata').find('hit')
 
-	# print(etree.tostring(doc, pretty_print=True))
+	# p = defaultdict(str)
+	p = tree()
 
-	# print doc
-	# print doc.find(/'hit')
-	root = tree.getroot()
-
-	p = defaultdict(str)
-
-	hit = tree.find('responsedata').find('hit')
-	# print hit.find('title').text
-	
-
-
-
-
-	# print participants
-
+	# Parse default project attributes
 	for k,v in getMapping('project').iteritems():
 		try:
 			p[k] = hit.find(v).text
 		except:
 			continue
 
-
+	# Parse additional partner attributes
 	p_extras = defaultdict(str)
 	participants_extra = root.xpath("//metadatagroup[@name='tag_participants']/item")
 	for p_extra in participants_extra:
 		key = p_extra.find("tag_part_organizationname").text
 		p_extras[key.lower()] = p_extra.find("tag_part_organizationname").text
 
+	# Partner/participant attributes
 	p['participants'] = list()
 	participants = root.xpath("//metadatagroup[@name='tag_erc_fields']/item")
 	for participant in participants:
 		p2 = defaultdict(str)
+
 		for k,v in getMapping('organization').iteritems():
 			try:
 				p2[k] = participant.find(v).text
@@ -116,6 +112,7 @@ def parse(rcn):
 				continue
 
 		if p2['order'] == "1":
+			# Add in additional data for the coordinator
 			p['coordinator'] = p2['id']
 			for k2,v2 in getMapping('coordinator').iteritems():
 				try:
@@ -123,6 +120,7 @@ def parse(rcn):
 				except:
 					continue
 		else:
+			# Add in additional data for participants
 			fullname = p2['name']
 			if p_extras[fullname.lower()] != "":
 				for k2,v2 in getMapping('partner').iteritems():
@@ -132,16 +130,6 @@ def parse(rcn):
 						continue
 
 		p['participants'].append(p2)
-
-		# print participant[0].tag
-
-
-	# m['']
-
-	# p['title'] = hit.find('title').text
-	# p['project_acronym'] = hit.find('projectacronym').text
-
-
 	return p
 
 

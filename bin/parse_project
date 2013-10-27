@@ -1,14 +1,16 @@
 #!/usr/local/bin/python
 
-
-# from parse_cordis import project
 from parse_cordis import project_xml
+from pprint import pprint
 import sys
+import json
 
 if len(sys.argv) < 2:
 	print "Usage: parse_cordis <RCN>"
 	print "  Example: parse_cordis 105875"
+	print "  Example: parse_cordis parse_cordis/tests/project.xml"
 	print "  Returns project information for the SyStemAge project from the Cordis website" 
 else:
-	# print project.parse(sys.argv[1])
-	print project_xml.parse(sys.argv[1])
+	p = project_xml.parse(sys.argv[1])
+	s = json.dumps(p)
+	pprint(json.loads(s))
