@@ -44,8 +44,8 @@ def fetchHTML(query_code, count):
   html = response.read()
   return html
 
-def parse(rcn, count=10):
-  html = fetchHTML(rcn, count)
+def parse(query_code, count=10):
+  html = fetchHTML(query_code, count)
   l = parseHTML(html)
   return l
 
