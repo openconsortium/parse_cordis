@@ -34,7 +34,8 @@ def assert_project_systemage(p):
 	assert p1['acronym'] == 'EMBL'
 	assert p1['latitude'] == '53.4354286'
 	assert p1['id'] == '999988230'
-	assert p1['country'] == 'DE'
+	# assert p1['country'] == 'DE'
+	assert p1['country'] == 'ES'
 
 
 	p3 = p['participants'][2]
