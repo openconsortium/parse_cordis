@@ -7,12 +7,7 @@ from htmllaundry import strip_markup
 import urllib2
 import logging
 
-# def pp(d):
-#   for k,v in d.iteritems():
-#     print k + "\t" + v
-
 def parseHTML(html):
-
   soup = BeautifulSoup(html)
 
   l = list()

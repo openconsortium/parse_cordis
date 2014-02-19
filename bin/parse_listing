@@ -3,9 +3,9 @@
 from parse_cordis import listing
 import sys
 
-if len(sys.argv) < 2:
-	print "Usage: parse_listing <QUERY_CODE>"
-	print "  Example: parse_list A923E997C57FE5AA5CE5E35BD668A0D3"
+if len(sys.argv) < 3:
+	print "Usage: parse_listing <QUERY_CODE> <MAX_NUMBER_OF_RESULTS=10>"
+	print "  Example: parse_list A923E997C57FE5AA5CE5E35BD668A0D3 100"
 	print "  Start your search from here: http://cordis.europa.eu/search/index.cfm?fuseaction=proj.advSearch" 
 else:
-	print listing.parse(sys.argv[1])
+	print listing.parse(sys.argv[1], sys.argv[2])

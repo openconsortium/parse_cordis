@@ -73,6 +73,7 @@ def getMapping(type):
 def parse(rcn):
 	if rcn.isdigit():
 		url = "http://cordis.europa.eu/projects/index.cfm?fuseaction=app.csa&action=read&rcn=" + str(rcn)
+		print "Parsing URL " + url + "..."
 	else:
 		# Support for using XML files directly
 		url = rcn
