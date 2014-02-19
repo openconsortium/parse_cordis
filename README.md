@@ -22,8 +22,7 @@ After you've setup the virtual environment, you can use pip to install `parse_co
 
 ## Usage via shell scripts
 
-Handy shell scripts are provided in `bin/`, and these are automatically linked when installing in your virtualenv.
-
+ 
     bin/parse_project.py 105875
 
 Returns all information about the project with RCN 105875 from the Cordis database in a nested dictionary structure.
@@ -48,6 +47,8 @@ Tests are provided using [Nose](https://nose.readthedocs.org/en/latest/).
 Run the tests independently with
 
     nosetests -v -s
+
+Automated tests are run via Travis on each commit: https://travis-ci.org/openconsortium/parse_cordis
 
 ## Credits
  
