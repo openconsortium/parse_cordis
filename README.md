@@ -50,6 +50,8 @@ Run the tests independently with
 
 Automated tests are run via Travis on each commit: https://travis-ci.org/openconsortium/parse_cordis
 
+[![Build Status](https://travis-ci.org/openconsortium/parse_cordis.png?branch=master)](https://travis-ci.org/openconsortium/parse_cordis)
+
 ## Credits
  
 * http://openconsortium.eu
