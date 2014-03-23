@@ -35,8 +35,6 @@ def assert_project_systemage(p):
 	assert p1['latitude'] == '53.4354286'
 	assert p1['id'] == '999988230'
 	assert p1['country'] == 'DE'
-	# assert p1['country'] == 'ES'
-
 
 	p3 = p['participants'][2]
 	assert p3['acronym'] == 'AX'
@@ -45,5 +43,19 @@ def assert_project_systemage(p):
 	assert p3['country'] == 'ES'
 
 
+# http://cordis.europa.eu/projects/rcn/91504_en.html
+def test_project_gn3():
+	p = project_xml.parse("91504")
+	assert len(p['participants']) == 34
 
-	
+	p1 = p['participants'][0]
+	assert p1['name'] == 'DELIVERY OF ADVANCED NETWORK TECHNOLOGY TO EUROPE LIMITED'
+	assert p1['city'] == 'OXFORD'
+	assert p1['country'] == 'GB'
+
+	assert p['project_website'] == 'http://www.geant.net/pages/home.aspx'
+	assert p['status_code'] == '2'
+	assert p['subject_index_code'] == 'COO,IPS,POL,SCI,TEL'
+	assert p['subject_index'] == 'Coordination, Cooperation,Information Processing, Information Systems,Policies,Scientific Research,Telecommunications'
+	assert p['title'] == 'Multi-gigabit european research and education network and associated services (GN3)'
+	assert p['project_acronym'] == 'GN3'
