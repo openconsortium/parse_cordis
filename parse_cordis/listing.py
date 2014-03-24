@@ -50,7 +50,7 @@ def cleanValue(n):
 
 def fetchHTML(query_code, count):
   url = "http://cordis.europa.eu/search/index.cfm?fuseaction=proj.printResultList&page=1&perPage=" + str(count) + "&q=" + query_code + "&type=adv"
-  print "Parsing URL " + url + "..."
+  # print "Parsing URL " + url + "..."
   response = urllib2.urlopen(url)
   html = response.read()
   return html
@@ -58,7 +58,7 @@ def fetchHTML(query_code, count):
 def fetchHTMLNew(count):
   params = "REF_PROGRAMMEACRONYM=FP7"
   url = "http://cordis.europa.eu/newsearch/index.cfm?combo_orderby=REC_QV_DATE%3Anumberdecreasing&controlsession=false&page=resultListGET&comboresultperpage=" + str(count) + "&formid=form_proj&useraction=advanced_search&" + params + "&js=1"
-  print "Parsing URL " + url + "..."
+  # print "Parsing URL " + url + "..."
   response = urllib2.urlopen(url)
   # print url
   html = response.read()
