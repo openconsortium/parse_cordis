@@ -1,0 +1,13 @@
+#!/usr/local/bin/python
+
+from parse_cordis import listing
+import sys
+import json
+
+if len(sys.argv) < 2:
+	print "Usage: parse_listing_new <MAX_NUMBER_OF_RESULTS=10>"
+	print "  Example: parse_listing_new 10"
+	print "  Start your search from here: http://cordis.europa.eu/newsearch/index.cfm?page=simpleSearch&js=1" 
+else:
+	l = listing.parseNew(sys.argv[1])
+	print json.dumps(l)
