@@ -4,7 +4,7 @@ import sys
 import json
 import urllib2
 
-if len(sys.argv) < 1:
+if len(sys.argv) < 3:
 	print "Usage: process_list_api <FILE> <API_BASE_URL=http://api.openconsortium.eu/cordis/1"
 	print "  Example: process_list_api items.json"
 	print "  Calls the Cordis API with the list of RCNs so they get stored in the API's cache" 
