@@ -5,3 +5,4 @@ bdist-mpkg==0.4.4
 beautifulsoup4==4.3.2
 htmllaundry==2.0
 lxml==3.2.3
+pika==0.9.8

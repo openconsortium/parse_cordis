@@ -9,12 +9,12 @@ setup(
     packages=['parse_cordis'],
     url='https://github.com/openconsortium/parse_cordis',
     # license='LICENSE.txt',
-    description='Useful EU Cordis scrapers.',
+    description='Useful EU Cordis scrapers and scripts.',
     long_description=open('README.md').read(),
     install_requires=[
         "beautifulsoup4 >= 4.3.2",
         "htmllaundry >= 2.0",
         "lxml >= 3.2.3",
     ],
-    scripts=['bin/parse_project', 'bin/parse_listing', 'bin/parse_listing_new', 'bin/process_list_api'],
+    scripts=['bin/parse_project', 'bin/parse_listing', 'bin/parse_listing_new', 'bin/process_list_api', 'bin/parse_cordis_rabbitmq'],
 )
