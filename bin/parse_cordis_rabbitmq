@@ -1,41 +1,10 @@
 #!/usr/local/bin/python
 
-from parse_cordis import listing
-from parse_cordis import project_xml
-import pika
-
+from parse_cordis import rabbit_mq
 import sys
-import json
-
-def main(limit, host='localhost', queue='cordis'):
-	# Connect to RabbitMQ
-	credentials = pika.PlainCredentials('guest', 'guest')
-	parameters = pika.ConnectionParameters(
-		host,
-		5672,
-		'/',
-		credentials
-	)
-	connection = pika.BlockingConnection(parameters)
-	channel = connection.channel()
-	channel.queue_declare(queue=queue, passive=False, durable=True)
-
-	l = listing.parseNew(limit)
-	print "Parsed Cordis for last " + str(limit) + " entries"
-
-	for el in l:
-		p = project_xml.parse(el)
-		p_json = json.dumps(p)
-
-		# Add this to rabbitmq
-		channel.basic_publish(exchange='',
-                      routing_key='cordis',
-                      body=p_json)
-		
-		print " [x] Sent cordis project with RCN " + str(el)
 
 if len(sys.argv) < 4:
 	print "Usage: parse_cordis_rabbitmq <MAX_NUMBER_OF_RESULTS=10> <HOST> <QUEUE>"
-	print "  Example: parse_listing_new 10 localhost cordis"
+	print "  Example: parse_cordis_rabbitmq 10 localhost cordis"
 else:
-	main(sys.argv[1], sys.argv[2], sys.argv[3])
+	rabbit_mq.rabbit_mq_from_cordis(sys.argv[1], sys.argv[2], sys.argv[3])

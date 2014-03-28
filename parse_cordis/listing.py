@@ -1,5 +1,3 @@
-#!/usr/local/bin/python
-
 from bs4 import BeautifulSoup
 from bs4 import UnicodeDammit
 from collections import defaultdict

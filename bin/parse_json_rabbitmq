@@ -1,0 +1,10 @@
+#!/usr/local/bin/python
+
+from parse_cordis import rabbit_mq
+import sys
+
+if len(sys.argv) < 4:
+	print "Usage: parse_file_rabbitmq <JSON_FILE> <HOST> <QUEUE>"
+	print "  Example: parse_file_rabbitmq output.json localhost cordis"
+else:
+	rabbit_mq.rabbit_mq_from_json(sys.argv[1], sys.argv[2], sys.argv[3])

@@ -16,5 +16,5 @@ setup(
         "htmllaundry >= 2.0",
         "lxml >= 3.2.3",
     ],
-    scripts=['bin/parse_project', 'bin/parse_listing', 'bin/parse_listing_new', 'bin/process_list_api', 'bin/parse_cordis_rabbitmq'],
+    scripts=['bin/parse_project', 'bin/parse_listing', 'bin/parse_listing_new', 'bin/process_list_api', 'bin/parse_cordis_rabbitmq', 'bin/parse_json_rabbitmq'],
 )
